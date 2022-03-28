@@ -116,7 +116,7 @@
 			<fields>
 				<field id="location_id" _delta="delete"></field>
 				<field id="location_name" _delta="delete"></field>
-				<field id="employee_number" _delta="delete"></field>
+				<!-- PS <field id="employee_number" _delta="delete"></field> -->
 				<field id="mobile_phone" _delta="delete"></field>
 				<field id="login" xsi:type="AttributeString" _delta="define">
 					<sql>login</sql>
@@ -155,7 +155,7 @@
 								<item id="fieldset:Person:info">
 									<items>
 										<item id="location_id" _delta="delete"></item>
-										<item id="employee_number" _delta="delete"></item>		
+										<!-- PS <item id="employee_number" _delta="delete"></item> -->
 									</items>
 								</item>
 							</items>
@@ -195,7 +195,7 @@
 				<search>
 					<items>
 						<item id="location_id" _delta="delete"></item>
-						<item id="employee_number" _delta="delete"></item>
+						<!-- PS <item id="employee_number" _delta="delete"></item> -->
 						<item id="phone" _delta="delete"></item>
 						<item id="email" _delta="redefine">
 							<rank>10</rank>
@@ -242,7 +242,7 @@
 						<item id="org_id" _delta="redefine">
 							<rank>40</rank>
 						</item>
-						<item id="first_name" _delta="delete"></item>
+						<!-- PS <item id="first_name" _delta="delete"></item> -->
 					</items>
 				</list>
 			</presentation>
@@ -1483,7 +1483,8 @@
 				</list>
 			</presentation>
 			<relations>
-				<relation id="impacts" _delta="define">
+				<!-- PS <relation id="impacts" _delta="define"> -->
+				<relation id="impacts" _delta="redefine">
 					<neighbours>
 						<neighbour id="cluster">
 							<attribute>cluster_list</attribute>
@@ -4260,7 +4261,8 @@
 			</relations>
 		</class>		
 
-		<class id="Rack" _delta="define">
+		<!-- PS <class id="Rack" _delta="define"> -->
+		<class id="Rack" _delta="redefine">
 			<parent>PhysicalDevice</parent>
 			<properties>
 				<category>bizmodel,searchable</category>
