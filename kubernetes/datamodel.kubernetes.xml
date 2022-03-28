@@ -99,12 +99,12 @@
 				<field id="organization_name" xsi:type="AttributeExternalField">
 				  <extkey_attcode>org_id</extkey_attcode>
 				  <target_attcode>name</target_attcode>
-				</field> -->
+				</field>
 				<field id="move2production" xsi:type="AttributeDate">
 				  <sql>move2production</sql>
 				  <default_value/>
 				  <is_null_allowed>true</is_null_allowed>
-				</field>
+				</field> -->
 				<field id="person_list" xsi:type="AttributeLinkedSetIndirect">
 					<linked_class>lnkPersonToKubernetes</linked_class>
 					<ext_key_to_me>kubernetes_id</ext_key_to_me>
