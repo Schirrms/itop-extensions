@@ -4,7 +4,7 @@
 	</constants>
 	<classes>
 		<class id="Kubernetes" _delta="define">
-			<parent>cmdbAbstractObject</parent>
+			<parent>FunctionalCI</parent>
 			<properties>
 				<category>bizmodel,searchable</category>
 				<abstract>true</abstract>
@@ -6500,6 +6500,7 @@ httpHeaders:
   		if (!$flag && !UserRights::IsAdministrator())
 		{
 			// 普通用户不允许删除非自己名下的lnkSideCarVerToDeployment
+			// Ordinary users are not allowed to delete lnkSideCarVerToDeployment not under their own name 
 			$oDeletionPlan->AddToDelete($this, null);
 			$oDeletionPlan->SetDeletionIssues($this, array('只能删除自己名下的关联'), true);
 			$oDeletionPlan->ComputeResults();
@@ -6726,6 +6727,8 @@ httpHeaders:
 				</classes>
 			</group>
 			<!--这里好像没有必要，只要有权限编辑To后面的类，就有权限编辑lnk类-->
+			<!-- It doesn't seem necessary here, as long as you have permission to edit the class 
+				behind To, you have permission to edit the lnk class -->
 			<group id="Kubelnk" _delta="define">
 				<classes>
 					<class id="lnkPersonToKubernetes"/>
