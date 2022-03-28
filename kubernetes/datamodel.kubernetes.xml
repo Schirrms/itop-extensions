@@ -2754,7 +2754,7 @@
 				</reconciliation>
 			</properties>
 			<fields>
-				<field id="name" xsi:type="AttributeString">
+				<field id="KName" xsi:type="AttributeString">
 					<sql>name</sql>
 					<default_value/>
 					<is_null_allowed>false</is_null_allowed>
@@ -2901,14 +2901,14 @@
 			<presentation>
 				<default_search>
 					<items>
-						<item id="name">
+						<item id="KName">
 							<rank>10</rank>
 						</item>
 					</items>
 				</default_search>
 				<details>
 					<items>
-						<item id="name">
+						<item id="KName">
 							<rank>10</rank>
 						</item>
 						<item id="description">
@@ -2940,7 +2940,7 @@
 				</details>
 				<search>
 					<items>
-						<item id="name">
+						<item id="KName">
 							<rank>10</rank>
 						</item>
 						<item id="description">
