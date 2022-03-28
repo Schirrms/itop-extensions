@@ -2395,7 +2395,7 @@
 				</reconciliation>
 			</properties>
 			<fields>
-				<field id="name" xsi:type="AttributeString">
+				<field id="name" xsi:type="AttributeString" _delta="redefine">
 					<sql>name</sql>
 					<default_value/>
 					<is_null_allowed>false</is_null_allowed>
