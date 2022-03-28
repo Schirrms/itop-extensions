@@ -281,8 +281,8 @@ Dict::Add('EN US', 'English', 'English', array(
 
 //K8sNamespace
 Dict::Add('EN US', 'English', 'English', array(
-	'Class:K8sNamespace' => 'LB Cluster',
-	'Class:K8sNamespace+' => 'All LB Clusters',
+	'Class:K8sNamespace' => 'Kubernetes Namespace',
+	'Class:K8sNamespace+' => 'All Kubernetes Namespaces',
 	'Class:K8sNamespace/Attribute:name' => 'Name',
 	'Class:K8sNamespace/Attribute:domain' => 'Domain',
 	'Class:K8sNamespace/Attribute:cname' => 'CNAME address',

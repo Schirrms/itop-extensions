@@ -1671,6 +1671,7 @@
 					<is_null_allowed>true</is_null_allowed>
 				</field>
 				<!-- 这个 field 是干嘛的? -->
+				<!-- What is this field for? -->
 				<field id="domaincheck" xsi:type="AttributeEnum">
 					<values>
 						<value id="yes">yes</value>
@@ -1683,6 +1684,9 @@
 				</field>
 				<!-- 默认创建的tls secret名称是 default-tls，这里为了支持不同的证书，允许用户输入自定义的tls secret名称是
  				     当然，此secret仍然需要管理员事先创建 -->
+				<!-- The name of the TLS secret created by default is default-tls. In order to support different certificates, 
+					users are allowed to enter a custom TLS secret name.
+					Of course, this secret still needs to be created by the administrator in advance -->
 				<field id="custom_cert" xsi:type="AttributeEnum">
 					<values>
 						<value id="yes">yes</value>
@@ -3849,6 +3853,7 @@
 		</class>
 
 		<!-- 以下是类型配置及lnk类-->
+		<!-- The following is the type configuration and lnk class -->
 		<class id="K8sNamespace" _delta="define">
 			<parent>Typology</parent>
 			<properties>
