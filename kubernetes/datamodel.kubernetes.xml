@@ -2392,10 +2392,10 @@
 						<attribute id="k8snamespace_id"/>
 						<attribute id="name"/>
 					</attributes>
-				</reconciliation>
+				</reconciliation
 			</properties>
 			<fields>
-				<field id="name" xsi:type="AttributeString" _delta="redefine">
+				<field id="SecretName" xsi:type="AttributeString">
 					<sql>name</sql>
 					<default_value/>
 					<is_null_allowed>false</is_null_allowed>
@@ -2639,7 +2639,7 @@
 			<presentation>
 				<details>
 					<items>
-						<item id="name">
+						<item id="SecretName">
 							<rank>10</rank>
 						</item>
 						<item id="k8snamespace_id">
@@ -2683,7 +2683,7 @@
 				</details>
 				<search>
 					<items>
-						<item id="name">
+						<item id="SecretName">
 							<rank>10</rank>
 						</item>
 						<item id="applicationsolution_id">
