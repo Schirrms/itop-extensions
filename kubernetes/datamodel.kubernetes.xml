@@ -83,18 +83,19 @@
 					<is_null_allowed>true</is_null_allowed>
 					<tracking_level>none</tracking_level>
 				</field>
-				<!-- <field id="description" xsi:type="AttributeText">
+				<!-- As moving Kubernetes under FunctionalCI, some attrs no longer are to define here
+				<field id="description" xsi:type="AttributeText">
 				  <sql>description</sql>
 				  <default_value/>
 				  <is_null_allowed>true</is_null_allowed>
-				</field> -->
+				</field>
 				<field id="org_id" xsi:type="AttributeExternalKey">
 				  <sql>org_id</sql>
 				  <target_class>Organization</target_class>
 				  <is_null_allowed>false</is_null_allowed>
 				  <on_target_delete>DEL_MANUAL</on_target_delete>
 				  <filter>SELECT Organization WHERE id = :current_contact->org_id</filter>
-				</field>
+				</field> -->
 				<field id="organization_name" xsi:type="AttributeExternalField">
 				  <extkey_attcode>org_id</extkey_attcode>
 				  <target_attcode>name</target_attcode>
