@@ -95,11 +95,11 @@
 				  <is_null_allowed>false</is_null_allowed>
 				  <on_target_delete>DEL_MANUAL</on_target_delete>
 				  <filter>SELECT Organization WHERE id = :current_contact->org_id</filter>
-				</field> -->
+				</field>
 				<field id="organization_name" xsi:type="AttributeExternalField">
 				  <extkey_attcode>org_id</extkey_attcode>
 				  <target_attcode>name</target_attcode>
-				</field>
+				</field> -->
 				<field id="move2production" xsi:type="AttributeDate">
 				  <sql>move2production</sql>
 				  <default_value/>
