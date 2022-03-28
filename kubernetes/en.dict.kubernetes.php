@@ -9,8 +9,8 @@
 Dict::Add('EN US', 'English', 'English', array(
 	// Dictionary entries go here
 //Kubernetes
-	'Class:Kubernetes/Attribute:applicationsolution_id' => 'APP',
-	'Class:Kubernetes/Attribute:k8snamespace_id' => 'LB Cluster',
+	'Class:Kubernetes/Attribute:applicationsolution_id' => 'Application Solution',
+	'Class:Kubernetes/Attribute:k8snamespace_id' => 'Kubernetes Namespace',
 	'Class:Kubernetes/Attribute:description' => 'description',
 	'Class:Kubernetes/Attribute:person_list' => 'Contacts',
 	'Class:Kubernetes/Attribute:person_list+' => 'All contacts linked to this object',
@@ -32,8 +32,8 @@ Dict::Add('EN US', 'English', 'English', array(
 	'Class:Controller' => 'Service',
 	'Class:Controller/Name' => '%1$s.%2$s',
 	'Class:Controller+' => 'All Services',
-	'Class:Controller/Attribute:k8snamespace_id' => 'LB Cluster',
-	'Class:Controller/Attribute:applicationsolution_id' => 'APP',
+	'Class:Controller/Attribute:k8snamespace_id' => 'Kubernetes Namespace',
+	'Class:Controller/Attribute:applicationsolution_id' => 'Application Solution',
 	'Class:Controller/Attribute:repo' => 'Reigistry',
 	'Class:Controller/Attribute:image' => 'Image',
 	'Class:Controller/Attribute:image_tag' => 'Image tag',
@@ -218,8 +218,8 @@ Dict::Add('EN US', 'English', 'English', array(
 	'Class:Ingress' => 'Load Balancer',
 	'Class:Ingress/Name' => '%1$s%2$s',
 	'Class:Ingress+' => 'All laod balancers',
-	'Class:Ingress/Attribute:k8snamespace_id' => 'LB Cluster',
-	'Class:Ingress/Attribute:applicationsolution_id' => 'APP',
+	'Class:Ingress/Attribute:k8snamespace_id' => 'Kubernetes Namespace',
+	'Class:Ingress/Attribute:applicationsolution_id' => 'Application Solution',
 	'Class:Ingress/Attribute:domain_id' => 'domain name',
 	'Class:Ingress/Attribute:location' => 'Location',
 	'Class:Ingress/Attribute:serviceport' => 'Service port',
@@ -294,9 +294,9 @@ Dict::Add('EN US', 'English', 'English', array(
 	'Class:K8sNamespace/Attribute:deployment_list' => 'Deployment',
 	'Class:K8sNamespace/Attribute:deployment_list+' => 'All deployments on this cluster',
 	'Class:K8sNamespace/Attribute:ingress_list' => 'Load balancers',
-	'Class:K8sNamespace/Attribute:ingress_list+' => 'iAll load balancer on this cluster',
-	'Menu:K8sNamespace' => 'LB Cluster',
-	'Menu:K8sNamespace+' => 'All LB Cluster',
+	'Class:K8sNamespace/Attribute:ingress_list+' => 'All load balancer on this cluster',
+	'Menu:K8sNamespace' => 'Kubernetes Namespace',
+	'Menu:K8sNamespace+' => 'All Kubernetes Namespaces',
 ));
 
 //K8sProbe
