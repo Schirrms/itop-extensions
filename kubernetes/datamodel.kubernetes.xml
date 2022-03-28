@@ -2392,7 +2392,7 @@
 						<attribute id="k8snamespace_id"/>
 						<attribute id="name"/>
 					</attributes>
-				</reconciliation
+				</reconciliation>
 			</properties>
 			<fields>
 				<field id="SecretName" xsi:type="AttributeString">
